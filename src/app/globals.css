@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components {
+  .menu-selection {
+    @apply bg-[#E8F6FF] text-[#008DEB]  rounded-xl font-bold m-3;
+  }
+  .custom-shadow {
+    @apply shadow-black;
+  }
+  .navigation-menu {
+    @apply min-w-[100px] py-5 flex hover:menu-selection px-5 items-center m-3;
+  }
+  .rtl-dir {
+    direction: rtl;
+  }
+}
+/* 
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+} */
